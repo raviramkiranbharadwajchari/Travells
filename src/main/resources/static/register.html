@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Register - Travel Explorer</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <script defer src="/js/main.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container">
+      <div class="brand">Travel Explorer</div>
+      <ul class="nav-menu">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/index.html#booking">Book</a></li>
+        <li><a href="/index.html#packages">Packages</a></li>
+        <li><a href="/index.html#gallery">Gallery</a></li>
+        <li><a href="/index.html#about">About</a></li>
+      </ul>
+      <div class="auth">
+        <a class="btn ghost" href="/login.html">Login</a>
+        <a class="btn" href="/register.html">Register</a>
+      </div>
+      <button class="nav-toggle" aria-label="open navigation">☰</button>
+    </nav>
+  </header>
+
+  <main class="container" style="padding:60px 20px">
+    <section class="auth-section" style="max-width:700px;margin:0 auto;background:white;padding:24px;border-radius:12px;box-shadow:0 8px 30px rgba(2,6,23,0.06)">
+      <h3>Create an account</h3>
+      <form id="register-form">
+        <label>Full Name
+          <input name="fullname" type="text" required />
+        </label>
+        <label>Contact
+          <input name="contact" type="text" required />
+        </label>
+        <label>DOB
+          <input name="dob" type="date" required />
+        </label>
+        <label>Email
+          <input name="email" type="email" required />
+        </label>
+        <label>Password
+          <input name="password" type="password" required />
+        </label>
+        <label>Gender
+          <select name="gender">
+            <option value="">Select</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+          </select>
+        </label>
+        <div style="display:flex;gap:8px;align-items:center;margin-top:12px">
+          <button class="btn" type="submit">Register</button>
+          <div style="margin-left:auto">Already have an account? <a href="/login.html">Login here</a></div>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer" style="margin-top:40px">
+    <div class="container footer-inner">
+      <div class="brand">Travel Explorer</div>
+      <div class="socials">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+      <div class="copyright">&copy; 2025 Travel Explorer</div>
+    </div>
+  </footer>
+</body>
+</html>

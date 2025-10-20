@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Travel Explorer - Home</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <script defer src="/js/main.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container">
+      <div class="brand">Travel Explorer</div>
+      <ul class="nav-menu">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#booking">Book</a></li>
+        <li class="dropdown">
+          <a href="#packages">Packages <i class="fa fa-caret-down"></i></a>
+          <ul class="dropdown-content">
+            <li><a href="#">USA</a></li>
+            <li><a href="#">India</a></li>
+            <li><a href="#">France</a></li>
+            <li><a href="#">Germany</a></li>
+          </ul>
+        </li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+      <div class="auth">
+        <a class="btn ghost" href="/login.html">Login</a>
+        <a class="btn" href="/register.html">Register</a>
+      </div>
+      <button class="nav-toggle" aria-label="open navigation">☰</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="hero" class="hero">
+      <div class="hero-overlay">
+        <div class="hero-content container">
+          <h1>Welcome to Travel Explorer</h1>
+          <h2 id="visit-line">Visit <span id="country">USA</span></h2>
+          <p class="hero-cta"><a class="btn big" href="#booking">Book Now</a></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- BOOKING & IMAGE -->
+    <section id="booking" class="booking container">
+      <div class="booking-left">
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&q=80&auto=format&fit=crop" alt="travel"/>
+      </div>
+      <div class="booking-right">
+        <h3>Book Your Tour</h3>
+        <form id="booking-form">
+          <label>Where To
+            <select id="whereTo" required>
+              <option value="USA">USA</option>
+              <option value="India">India</option>
+              <option value="France">France</option>
+              <option value="Germany">Germany</option>
+            </select>
+          </label>
+
+          <label>How Many Persons
+            <input id="persons" type="number" min="1" value="1" required />
+          </label>
+
+          <label>Start Date
+            <input id="startDate" type="date" required />
+          </label>
+
+          <label>End Date
+            <input id="endDate" type="date" required />
+          </label>
+
+          <label>Description
+            <textarea id="description" minlength="50" maxlength="500" placeholder="Tell us about your preferences (50-500 chars)" required></textarea>
+          </label>
+
+          <button type="submit" class="btn">Book Now</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- PACKAGES -->
+    <section id="packages" class="packages container">
+      <h3>Featured Packages</h3>
+      <div class="packages-grid">
+        <!-- 9 cards -->
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1483729558449-99ef09a8c325?w=800&q=60&auto=format&fit=crop" alt="package">
+          <div class="card-body">
+            <h4>New York City</h4>
+            <p>Explore the city that never sleeps with iconic skyline views.</p>
+            <div class="meta"><span class="price">$1,299</span><span class="rating">★★★★☆</span></div>
+            <a class="btn small" href="#booking">Book Now</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1505765055764-9b52f5f1b5e8?w=800&q=60&auto=format&fit=crop" alt="package">
+          <div class="card-body">
+            <h4>Goa Beaches</h4>
+            <p>Relax on golden sands and enjoy coastal cuisine.</p>
+            <div class="meta"><span class="price">$799</span><span class="rating">★★★☆☆</span></div>
+            <a class="btn small" href="#booking">Book Now</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=800&q=60&auto=format&fit=crop" alt="package">
+          <div class="card-body">
+            <h4>Paris Getaway</h4>
+            <p>Romantic walks, museums and exquisite food.</p>
+            <div class="meta"><span class="price">$1,499</span><span class="rating">★★★★★</span></div>
+            <a class="btn small" href="#booking">Book Now</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1467269204594-9661b134dd2b?w=800&q=60&auto=format&fit=crop" alt="package">
+          <div class="card-body">
+            <h4>Alpine Germany</h4>
+            <p>Scenic mountain stays and charming towns.</p>
+            <div class="meta"><span class="price">$1,199</span><span class="rating">★★★★☆</span></div>
+            <a class="btn small" href="#booking">Book Now</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?w=800&q=60&auto=format&fit=crop" alt="package">
+          <div class="card-body">
+            <h4>Tokyo Highlights</h4>
+            <p>Modern culture meets tradition in Tokyo.</p>
+            <div class="meta"><span class="price">$1,399</span><span class="rating">★★★★☆</span></div>
+            <a class="btn small" href="#booking">Book Now</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1472214103451-9374bd1c798e?w=800&q=60&auto=format&fit=crop" alt="package">
+          <div class="card-body">
+            <h4>London Escape</h4>
+            <p>History, theatre and riverside walks.</p>
+            <div class="meta"><span class="price">$1,099</span><span class="rating">★★★☆☆</span></div>
+            <a class="btn small" href="#booking">Book Now</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1471115853179-9d6a7d2a2a4d?w=800&q=60&auto=format&fit=crop" alt="package">
+          <div class="card-body">
+            <h4>Sydney Sights</h4>
+            <p>Iconic harbour and beachside relaxation.</p>
+            <div class="meta"><span class="price">$1,599</span><span class="rating">★★★★☆</span></div>
+            <a class="btn small" href="#booking">Book Now</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1505765055764-9b52f5f1b5e8?w=800&q=60&auto=format&fit=crop" alt="package">
+          <div class="card-body">
+            <h4>Kerala Backwaters</h4>
+            <p>Houseboat stays and serene canals.</p>
+            <div class="meta"><span class="price">$899</span><span class="rating">★★★★☆</span></div>
+            <a class="btn small" href="#booking">Book Now</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&q=60&auto=format&fit=crop" alt="package">
+          <div class="card-body">
+            <h4>California Roadtrip</h4>
+            <p>Coastal drives and national parks.</p>
+            <div class="meta"><span class="price">$1,049</span><span class="rating">★★★★☆</span></div>
+            <a class="btn small" href="#booking">Book Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery" class="gallery container">
+      <h3>Gallery</h3>
+      <div class="gallery-grid">
+        <!-- 9 images -->
+        <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=800&q=60&auto=format&fit=crop" alt="g1">
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&q=60&auto=format&fit=crop" alt="g2">
+        <img src="https://images.unsplash.com/photo-1471115853179-9d6a7d2a2a4d?w=800&q=60&auto=format&fit=crop" alt="g3">
+        <img src="https://images.unsplash.com/photo-1467269204594-9661b134dd2b?w=800&q=60&auto=format&fit=crop" alt="g4">
+        <img src="https://images.unsplash.com/photo-1472214103451-9374bd1c798e?w=800&q=60&auto=format&fit=crop" alt="g5">
+        <img src="https://images.unsplash.com/photo-1505765055764-9b52f5f1b5e8?w=800&q=60&auto=format&fit=crop" alt="g6">
+        <img src="https://images.unsplash.com/photo-1483729558449-99ef09a8c325?w=800&q=60&auto=format&fit=crop" alt="g7">
+        <img src="https://images.unsplash.com/photo-1504215680853-026ed2a45def?w=800&q=60&auto=format&fit=crop" alt="g8">
+        <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=800&q=60&auto=format&fit=crop" alt="g9">
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="about container">
+      <div class="about-left">
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&q=80&auto=format&fit=crop" alt="about">
+      </div>
+      <div class="about-right">
+        <h3>About Travel Explorer</h3>
+        <p>Established: 2015</p>
+        <p>We offer curated tours, personalized itineraries and end-to-end travel support. Our mission is to make travel accessible and unforgettable.</p>
+        <ul>
+          <li>Custom itineraries</li>
+          <li>24/7 customer support</li>
+          <li>Best price guarantee</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="brand">Travel Explorer</div>
+      <div class="socials">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+      <div class="copyright">&copy; 2025 Travel Explorer</div>
+    </div>
+  </footer>
+</body>
+</html>
